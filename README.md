@@ -8,6 +8,7 @@ The email notification microservice allows other programs to send success or fai
 You can request the microservice to send an email by making a `POST` request to the `/send-email` endpoint. The request should include the recipient's email address, the subject of the email, and the message content.
 
 #### Example Call
+```javascript
 const axios = require('axios');
 
 axios.post('http://localhost:3000/send-email', {
@@ -20,13 +21,15 @@ axios.post('http://localhost:3000/send-email', {
 })
 .catch(error => {
   console.error('Error sending email:', error);
-});
+}); 
+
 
 
 ### How to Programmatically RECEIVE Data from the Microservice
 To receive data from the microservice, you can make a GET request to the /get-data endpoint. This is an example endpoint that returns sample data.
 
 ### Exampple Call
+```javascript
 const axios = require('axios');
 
 axios.get('http://localhost:3000/get-data')
