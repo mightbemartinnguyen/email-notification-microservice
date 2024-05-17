@@ -49,4 +49,4 @@ axios.get('http://localhost:3000/get-data')
 ```
 
 UML Sequence Diagram
-![UML Sequence Diagram](./UML Diagram.png)
+![UML Sequence Diagram](UML Diagram.png)
