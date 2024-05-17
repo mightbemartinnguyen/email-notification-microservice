@@ -21,8 +21,8 @@ axios.post('http://localhost:3000/send-email', {
 })
 .catch(error => {
   console.error('Error sending email:', error);
-}); 
-
+});  
+```
 
 
 ### How to Programmatically RECEIVE Data from the Microservice
@@ -39,3 +39,4 @@ axios.get('http://localhost:3000/get-data')
   .catch(error => {
     console.error('Error receiving data:', error);
   });
+```
